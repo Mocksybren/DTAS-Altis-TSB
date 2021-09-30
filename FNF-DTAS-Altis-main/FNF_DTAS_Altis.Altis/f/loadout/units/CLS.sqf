@@ -4,7 +4,10 @@ call phx_fnc_loadout_handleClothing; // Add clothing variables above this line!
 phx_loadout_splint = "ACE_splint:4";
 
 // Add gear
-[phx_loadout_aid, "uniform"] call phx_fnc_loadout_handleGear;
+//[phx_loadout_aid, "uniform"] call phx_fnc_loadout_handleGear;
+[phx_loadout_Bandages, "uniform"] call phx_fnc_loadout_handleGear;
+[phx_loadout_morphines, "uniform"] call phx_fnc_loadout_handleGear;
+[phx_loadout_epinephrines, "uniform"] call phx_fnc_loadout_handleGear;
 [phx_loadout_smoke, "uniform"] call phx_fnc_loadout_handleGear;
 [phx_loadout_grenade, "uniform"] call phx_fnc_loadout_handleGear;
 [phx_loadout_cuffs, "item"] call phx_fnc_loadout_handleGear;
@@ -12,7 +15,6 @@ phx_loadout_splint = "ACE_splint:4";
 [phx_loadout_rifle_mag, "vest"] call phx_fnc_loadout_handleGear;
 [phx_loadout_PAK, "backpack"] call phx_fnc_loadout_handleGear;
 [phx_loadout_bandage, "backpack"] call phx_fnc_loadout_handleGear;
-//[phx_loadout_splint, "uniform"] call phx_fnc_loadout_handleGear;
 [phx_loadout_morphine, "backpack"] call phx_fnc_loadout_handleGear;
 [phx_loadout_epinephrine, "backpack"] call phx_fnc_loadout_handleGear;
 [phx_loadout_blood, "backpack"] call phx_fnc_loadout_handleGear;

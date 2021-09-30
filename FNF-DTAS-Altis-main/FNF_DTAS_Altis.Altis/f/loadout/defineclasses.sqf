@@ -45,6 +45,12 @@ aClasses =
 	]
 
 	,[
+		"Marksman"
+		,ROLE_MK
+		,{}
+	]
+
+	,[
 		"Ammo Man"
 		,ROLE_AM
 		,{}
@@ -110,6 +116,12 @@ dClasses =
 	,[
 		"Machine Gunner"
 		,ROLE_MG
+		,{}
+	]
+
+	,[
+		"Marksman"
+		,ROLE_MK
 		,{}
 	]
 

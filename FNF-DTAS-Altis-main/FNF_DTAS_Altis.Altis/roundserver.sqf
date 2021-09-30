@@ -379,7 +379,7 @@ while {true} do
 					"_endPos",
 					"_isBridge"
 				];
-				
+
 				_pos = getPosATL _thisGroupRoad;
 				_dir = _begPos getDir _endPos;
 			} else {
@@ -421,7 +421,7 @@ while {true} do
 				// 	} forEach _units;
 				// } else {
 				// 	// currentVeh pushBack _wantsToDrive;
-					
+
 				// 	// (owner _wantsToDrive) publicVariableClient "currentVeh";
 				// 	[_wantsToDrive, _vehcurrentVeh] remoteExecCall ["moveInDriver", _wantsToDrive];
 
@@ -436,7 +436,7 @@ while {true} do
 
 
 
-			
+
 
 			_driverArray = [];
 			_driverArrayCount = 0;
@@ -519,38 +519,6 @@ while {true} do
 		adminPaused = true;
 		publicVariable "adminPaused";
 	};
-
-
-
-	sleep 2;
-	atkHasMat = _aUnitArr select {_x hasWeapon "rhs_weap_maaws"};
-	defHasMat = _dUnitArr select {_x hasWeapon "launch_RPG32_green_F"};
-	fnc_limitMATCount = {
-		params ["_units", "_numberPer10Players", "_aOrD"];
-		while {count _units > (count _units / (10/_numberPer10Players))} do {
-			_removeMAT = selectRandom _units;
-			_units deleteAt (_units find _removeMAT);
-			switch (_aOrD) do {
-				case "A": {
-					{
-						currentAClass = (selectRandom aClasses);
-						[true] call fnc_respawn;
-					} remoteExec ["call", _removeMAT];
-				};
-				case "D": {
-					{
-						currentDClass = (selectRandom dClasses);
-						[true] call fnc_respawn;
-					} remoteExec ["call", _removeMAT];
-				};
-			};
-		};
-	};
-	// limit MAT on each side to maximum 2 per 10 players
-	[defHasMat, 2, "D"] call fnc_limitMATCount;
-	[atkHasMat, 2, "A"] call fnc_limitMATCount;
-
-	sleep 2;
 
 
 	waitUntil

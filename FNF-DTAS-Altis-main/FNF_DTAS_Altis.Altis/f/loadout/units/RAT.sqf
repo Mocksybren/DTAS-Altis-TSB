@@ -7,8 +7,10 @@ player addWeapon phx_loadout_antitank_weapon;
 if (!isNil "phx_loadout_antitank_mag_1") then {
 	[phx_loadout_antitank_mag_1, "backpack"] call phx_fnc_loadout_handleGear;
 };
-[phx_loadout_aid, "uniform"] call phx_fnc_loadout_handleGear;
-//[phx_loadout_splint, "uniform"] call phx_fnc_loadout_handleGear;
+//[phx_loadout_aid, "uniform"] call phx_fnc_loadout_handleGear;
+[phx_loadout_Bandages, "uniform"] call phx_fnc_loadout_handleGear;
+[phx_loadout_morphines, "uniform"] call phx_fnc_loadout_handleGear;
+[phx_loadout_epinephrines, "uniform"] call phx_fnc_loadout_handleGear;
 [phx_loadout_smoke, "uniform"] call phx_fnc_loadout_handleGear;
 [phx_loadout_grenade, "uniform"] call phx_fnc_loadout_handleGear;
 [phx_loadout_cuffs, "item"] call phx_fnc_loadout_handleGear;

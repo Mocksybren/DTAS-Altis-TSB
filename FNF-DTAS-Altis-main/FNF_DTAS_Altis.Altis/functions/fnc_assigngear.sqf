@@ -32,6 +32,9 @@ phx_loadout_gps = ["phx_loadout_gps",0] call BIS_fnc_getParamValue;
 phx_loadout_watch = ["phx_loadout_watch",0] call BIS_fnc_getParamValue;
 phx_loadout_compass = ["phx_loadout_compass",0] call BIS_fnc_getParamValue;
 phx_loadout_aid = "FirstAidKit:2";
+phx_loadout_Bandages = "ACE_elasticBandage:15";
+phx_loadout_morphines = "ACE_morphine:3";
+phx_loadout_epinephrines = "ACE_epinephrine:3";
 phx_loadout_smoke = "SmokeShell:4";
 phx_loadout_grenade = "HandGrenade:2";
 phx_loadout_cuffs = "ACE_CableTie:2";
@@ -39,10 +42,10 @@ phx_loadout_explosives = "DemoCharge_Remote_Mag:4";
 phx_loadout_defusalkit = "ACE_DefusalKit";
 phx_loadout_trigger = "ACE_Clacker";
 phx_loadout_PAK = "ACE_personalAidKit";
-phx_loadout_bandage = "ACE_fieldDressing:32";
-phx_loadout_morphine = "ACE_morphine:16";
+phx_loadout_bandage = "ACE_elasticBandage:32";
+phx_loadout_morphine = "ACE_morphine:8";
 phx_loadout_epinephrine = "ACE_epinephrine:8";
-phx_loadout_blood = "ACE_bloodIV:2";
+phx_loadout_blood = "ACE_bloodIV_500:6";
 phx_loadout_maptools = "ACE_MapTools";
 phx_loadout_entrenching = "ACE_EntrenchingTool";
 [] call compile preprocessFileLineNumbers format["f\loadout\fn_loadout_uniforms.sqf"];
@@ -82,7 +85,7 @@ if (_bGiveWeapons) then {if (needReload player == 1) then {reload player}};
 
 _chosenOptic = player getVariable ["chosenOptic", nil];
 if (!isNil "_chosenOptic") then {
-	player addPrimaryWeaponItem _chosenOptic; 
+	player addPrimaryWeaponItem _chosenOptic;
 };
 
 if (!isNil "loadoutNotes") then {[loadoutNotes] call CBA_fnc_removePerFrameHandler};

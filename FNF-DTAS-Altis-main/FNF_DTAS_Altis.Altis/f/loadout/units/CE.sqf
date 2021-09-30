@@ -4,8 +4,10 @@ call phx_fnc_loadout_handleClothing; // Add clothing variables above this line!
 // Add gear
 [phx_loadout_rifle_mag_tracer, "vest"] call phx_fnc_loadout_handleGear;
 [phx_loadout_explosives, "backpack"] call phx_fnc_loadout_handleGear;
-[phx_loadout_aid, "uniform"] call phx_fnc_loadout_handleGear;
-//[phx_loadout_splint, "uniform"] call phx_fnc_loadout_handleGear;
+//[phx_loadout_aid, "uniform"] call phx_fnc_loadout_handleGear;
+[phx_loadout_Bandages, "uniform"] call phx_fnc_loadout_handleGear;
+[phx_loadout_morphines, "uniform"] call phx_fnc_loadout_handleGear;
+[phx_loadout_epinephrines, "uniform"] call phx_fnc_loadout_handleGear;
 [phx_loadout_smoke, "uniform"] call phx_fnc_loadout_handleGear;
 [phx_loadout_defusalkit, "uniform"] call phx_fnc_loadout_handleGear;
 [phx_loadout_trigger, "uniform"] call phx_fnc_loadout_handleGear;
