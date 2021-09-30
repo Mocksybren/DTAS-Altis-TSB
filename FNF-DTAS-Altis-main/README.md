@@ -14,6 +14,8 @@ _Inspired by DTAS (Dynamic Take And Secure) for Infiltration, which is a realist
 
 2021 : Modernized and tailored for the Friday Night Fight by the FNF Technical Team
 
+2021 : Tailored for PVP server in TSB
+
 
 ## Mods Required
 
