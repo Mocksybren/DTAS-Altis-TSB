@@ -3,13 +3,14 @@ DTAS modified to be usable in TSB
 Tweaks and such
 
 
-* Added 
+**Added:**
 Marksman class back
 
-* Removed
+**Removed:**
 MAT limit
 Unneeded Advertisements
+CBA config that fucks witht the server settings
 
-* Tweaked
+**Tweaked:**
 Medical for each role
 standard round timer to 120
