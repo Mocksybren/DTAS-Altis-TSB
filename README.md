@@ -8,9 +8,12 @@ Marksman class back
 
 **Removed:**
 MAT limit
+
 Unneeded Advertisements
+
 CBA config that fucks witht the server settings
 
 **Tweaked:**
 Medical for each role
+
 standard round timer to 120
