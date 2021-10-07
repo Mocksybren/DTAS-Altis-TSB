@@ -6,6 +6,10 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=1;
+	mods[]=
+	{
+		"3denEnhanced"
+	};
 	class ItemIDProvider
 	{
 		nextID=477;
@@ -16,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=473;
+		nextID=474;
 	};
 	class Camera
 	{
-		pos[]={2665.1523,24.528444,9800.5605};
-		dir[]={0.056714069,-0.39579484,0.91658705};
-		up[]={0.024443222,0.91833985,0.39503986};
-		aside[]={0.99809301,1.4959369e-008,-0.061757285};
+		pos[]={8474.8486,128.19608,25110.953};
+		dir[]={-0.71669424,-0.69703388,-0.022947459};
+		up[]={-0.6966958,0.71701872,-0.022306431};
+		aside[]={-0.032002598,1.7228012e-007,0.9995029};
 	};
 };
 binarizationWanted=0;
-sourceName="FNF_DTAS_Altis";
+sourceName="DTAS21_Altis";
 addons[]=
 {
 	"A3_Ui_F",
@@ -38,16 +42,13 @@ addons[]=
 	"A3_Modules_F",
 	"A3_Characters_F",
 	"A3_Modules_F_Curator_Curator",
-	"A3_Structures_F_Orange_Signs_Mines",
-	"A3_Structures_F_Mil_Flags",
-	"A3_Signs_F_Signs_Ad",
-	"A3_Structures_F_Civ_InfoBoards"
+	"A3_Structures_F_Orange_Signs_Mines"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=10;
+		items=9;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -108,13 +109,6 @@ class AddonsMetaData
 		{
 			className="A3_Structures_F_Orange";
 			name="Arma 3 Orange - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item9
-		{
-			className="A3_Signs_F";
-			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -257,7 +251,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=182;
+		items=177;
 		class Item0
 		{
 			dataType="Marker";
@@ -1179,7 +1173,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8470.416,108.64491,25114.924};
+				position[]={8470.21,108.59302,25115.057};
 				angles[]={0.10230894,1.5707964,0.183254};
 			};
 			side="Empty";
@@ -1191,7 +1185,6 @@ class Mission
 			};
 			id=87;
 			type="Land_HBarrierBig_F";
-			atlOffset=7.6293945e-006;
 		};
 		class Item36
 		{
@@ -7481,87 +7474,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2668.7461,8.2184868,9840.6982};
-				angles[]={6.1506276,6.1653581,6.2285738};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="call{this setFlagTexture ""media\flag_fnfblue_210.paa"";}";
-			};
-			id=401;
-			type="Flag_White_F";
-			atlOffset=4.7683716e-007;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item175
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={8445.9678,111.21525,25099.186};
-				angles[]={6.2378764,0,6.1584988};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="call{this setFlagTexture ""media\flag_fnfred_210.paa"";}";
-			};
-			id=402;
-			type="Flag_White_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item176
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={2671.2273,8.2890797,9857.2451};
 				angles[]={6.153255,0,6.2551923};
 			};
@@ -7576,104 +7488,7 @@ class Mission
 			type="Land_HBarrierBig_F";
 			atlOffset=-4.7683716e-007;
 		};
-		class Item177
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={2681.7224,8.0803509,9854.4473};
-				angles[]={6.0089407,0,0.11416738};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=461;
-			type="SignAd_SponsorS_F";
-			atlOffset=-4.7683716e-007;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ObjectTextureCustom0";
-					expression="_this setObjectTextureGlobal [0,_value]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="media\flag_fnfblue_210.paa";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item178
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={8458.6572,106.80098,25113.42};
-				angles[]={0.055941612,0,0.0066682254};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=462;
-			type="SignAd_SponsorS_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ObjectTextureCustom0";
-					expression="_this setObjectTextureGlobal [0,_value]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="media\flag_fnfred_210.paa";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item179
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={8442.9727,108.90533,25097.764};
-				angles[]={6.2378831,1.5707964,6.088356};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.2;
-				init="this allowDamage false;";
-			};
-			id=82;
-			type="Land_HBarrierBig_F";
-		};
-		class Item180
+		class Item175
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7692,378 +7507,23 @@ class Mission
 			type="Land_HBarrierBig_F";
 			atlOffset=7.6293945e-006;
 		};
-		class Item181
+		class Item176
 		{
-			dataType="Layer";
-			name="AdBoards";
-			state=1;
-			class Entities
+			dataType="Object";
+			class PositionInfo
 			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={2687.8279,8.3346987,9854.625};
-						angles[]={6.0501657,0.16913986,0.057264246};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						init="call{if (isServer) then {[  " \n " this,  " \n " ""Read a Poster"",  " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"",  " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"",  " \n " ""_this distance _target < 3"",  " \n " ""_caller distance _target < 3"",  " \n " {},  " \n " {},  " \n " {createDialog (selectRandom [""RscAdDisplay1"",""RscAdDisplay2""])},  " \n " {},  " \n " [],  " \n " 1,  " \n " 0,  " \n " false,  " \n " false  " \n "] remoteExec [""BIS_fnc_holdActionAdd"", 0, true];};}";
-						disableSimulation=1;
-					};
-					id=464;
-					type="Land_Noticeboard_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ObjectTextureCustom0";
-							expression="_this setObjectTextureGlobal [0,_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ads\adboard.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={2671.283,7.5359478,9854.7939};
-						angles[]={6.0934858,5.8073735,6.2551899};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						init="call{if (isServer) then {[  " \n " this,  " \n " ""Read a Poster"",  " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"",  " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"",  " \n " ""_this distance _target < 3"",  " \n " ""_caller distance _target < 3"",  " \n " {},  " \n " {},  " \n " {createDialog (selectRandom [""RscAdDisplay1"",""RscAdDisplay2""])},  " \n " {},  " \n " [],  " \n " 1,  " \n " 0,  " \n " false,  " \n " false  " \n "] remoteExec [""BIS_fnc_holdActionAdd"", 0, true];};}";
-						disableSimulation=1;
-					};
-					id=465;
-					type="Land_Noticeboard_F";
-					atlOffset=-4.7683716e-007;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ObjectTextureCustom0";
-							expression="_this setObjectTextureGlobal [0,_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ads\adboard.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8460.1494,107.18397,25099.777};
-						angles[]={0.0066671576,3.1421688,0.029321531};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						init="call{if (isServer) then {[  " \n " this,  " \n " ""Read a Poster"",  " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"",  " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"",  " \n " ""_this distance _target < 3"",  " \n " ""_caller distance _target < 3"",  " \n " {},  " \n " {},  " \n " {createDialog (selectRandom [""RscAdDisplay1"",""RscAdDisplay2""])},  " \n " {},  " \n " [],  " \n " 1,  " \n " 0,  " \n " false,  " \n " false  " \n "] remoteExec [""BIS_fnc_holdActionAdd"", 0, true];};}";
-						disableSimulation=1;
-					};
-					id=466;
-					type="Land_Noticeboard_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ObjectTextureCustom0";
-							expression="_this setObjectTextureGlobal [0,_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ads\adboard.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8464.3613,107.28973,25113.273};
-						angles[]={0.086446159,0,0.15735888};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						init="call{if (isServer) then {[  " \n " this,  " \n " ""Read a Poster"",  " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"",  " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"",  " \n " ""_this distance _target < 3"",  " \n " ""_caller distance _target < 3"",  " \n " {},  " \n " {},  " \n " {createDialog (selectRandom [""RscAdDisplay1"",""RscAdDisplay2""])},  " \n " {},  " \n " [],  " \n " 1,  " \n " 0,  " \n " false,  " \n " false  " \n "] remoteExec [""BIS_fnc_holdActionAdd"", 0, true];};}";
-						disableSimulation=1;
-					};
-					id=467;
-					type="Land_Noticeboard_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ObjectTextureCustom0";
-							expression="_this setObjectTextureGlobal [0,_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ads\adboard.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8447.6201,107.64794,25113.26};
-						angles[]={0.081157811,0,6.0263247};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						init="call{if (isServer) then {[  " \n " this,  " \n " ""Read a Poster"",  " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"",  " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"",  " \n " ""_this distance _target < 3"",  " \n " ""_caller distance _target < 3"",  " \n " {},  " \n " {},  " \n " {createDialog (selectRandom [""RscAdDisplay1"",""RscAdDisplay2""])},  " \n " {},  " \n " [],  " \n " 1,  " \n " 0,  " \n " false,  " \n " false  " \n "] remoteExec [""BIS_fnc_holdActionAdd"", 0, true];};}";
-						disableSimulation=1;
-					};
-					id=468;
-					type="Land_Noticeboard_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ObjectTextureCustom0";
-							expression="_this setObjectTextureGlobal [0,_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ads\adboard.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={2683.6189,4.9439044,9840.7529};
-						angles[]={6.1193337,3.0230324,0.016004669};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						init="call{if (isServer) then {[  " \n " this,  " \n " ""Read a Poster"",  " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"",  " \n " ""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa"",  " \n " ""_this distance _target < 3"",  " \n " ""_caller distance _target < 3"",  " \n " {},  " \n " {},  " \n " {createDialog (selectRandom [""RscAdDisplay1"",""RscAdDisplay2""])},  " \n " {},  " \n " [],  " \n " 1,  " \n " 0,  " \n " false,  " \n " false  " \n "] remoteExec [""BIS_fnc_holdActionAdd"", 0, true];};}";
-						disableSimulation=1;
-					};
-					id=469;
-					type="Land_Noticeboard_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ObjectTextureCustom0";
-							expression="_this setObjectTextureGlobal [0,_value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ads\adboard.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
+				position[]={8442.9727,108.90533,25097.764};
+				angles[]={6.2378831,1.5707964,6.088356};
 			};
-			id=470;
-			atlOffset=19.815838;
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.2;
+				init="this allowDamage false;";
+			};
+			id=82;
+			type="Land_HBarrierBig_F";
 		};
 	};
 };
