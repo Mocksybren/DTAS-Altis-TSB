@@ -1,4 +1,4 @@
-# Friday Night Fight DTAS
+# DTAS
 
 ## **Dynamic Take and Secure**
 
@@ -25,7 +25,8 @@ Standard
 - RHS AFRF
 - Task Force Arrowhead Radio
 
-
+---
+Unedited
 WWII
 - IFA
 - FOW
@@ -42,10 +43,10 @@ Players spawn in walled-in safe areas near opposite parts of the map. Scroll whe
 
 ### **Planning**
 
-When they load in, players will have 60 seconds to grab kits and prepare (_subsequent rounds will allow only 30 seconds_). The objective location and their role in the next round (ATK/DEF) will be visible to allow for planning. The ACE Self-Interaction menu will also allow for the selection of a 1x-2x optic for their weapon, if appropriate.
+When they load in, players will have 60 seconds to grab kits and prepare (_subsequent rounds will allow only 120 seconds_). The objective location and their role in the next round (ATK/DEF) will be visible to allow for planning. The ACE Self-Interaction menu will also allow for the selection of a 1x-2x optic for their weapon, if appropriate.
 
-- Two MAT roles per 10 players on a side are allowed. This means that 20 players on DTAS = 10 players per side, and two MAT roles are permitted on each. If more than this select MAT role on a side, random players who selected MAT will have their roles randomized at round start until the limit is reached.
 - Combat Engineers are now available on both sides -- they will receive 4x small demolition blocks and a remote clacker.
+- Marksman are now avaiblable on both sides.
 
 At the end of this planning period, attackers will spawn at a point nearby the objective in Humvees, and defenders will spawn on the objective. 
 
