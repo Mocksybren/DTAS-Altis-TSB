@@ -1,5 +1,6 @@
 # DTAS-Altis-TSB
-DTAS modified to be usable in TSB
+DTAS modified to the wishes of TSB
+
 Tweaks and such
 
 
